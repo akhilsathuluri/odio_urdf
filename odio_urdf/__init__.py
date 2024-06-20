@@ -858,7 +858,7 @@ class Disablefixedjointlumping(Element):
 class Contact(Element):
     """Bullet3 element."""
 
-    allowed_elements = ["Stiffness", "Damping", "Lateral_Friction"]
+    allowed_elements = ["Stiffness", "Damping", "Lateral_Friction", "Lateral_friction", "Restitution"]
 
 
 class Stiffness(Element):
@@ -874,6 +874,16 @@ class Damping(Element):
 
 
 class Lateral_Friction(Element):
+    """Bullet3 element."""
+
+    allowed_attributes = ["value"]
+
+class Lateral_friction(Element):
+    """Bullet3 element."""
+
+    allowed_attributes = ["value"]
+
+class Restitution(Element):
     """Bullet3 element."""
 
     allowed_attributes = ["value"]
